@@ -38,6 +38,10 @@ function insertDebounced() {
     }, time);
 }
 
+function htmlEntities(str) {
+    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
 function insert() {
     if (running) {
         runAgain = true;
@@ -74,14 +78,15 @@ function insert() {
                     return false;
                 }
                 var self = this;
-                content = emoji.replace_unified(self.textContent);
+
+                content = emoji.replace_unified(htmlEntities(self.textContent));
                 if (content != this.textContent) {
                     $parent = $this.parent();
                     fontSize = $parent.css('font-size');
                     fontSize = (parseInt(fontSize) * scale) + 'px';
                     var replacementNode = document.createElement('span');
                     replacementNode.className = 'emoji-container';
-                    replacementNode.innerHTML = emoji.replace_unified(self.textContent);
+                    replacementNode.innerHTML = content;
                     self.parentNode.insertBefore(replacementNode, self);
                     self.parentNode.removeChild(self);
                     if (fontSize != '16px') {
