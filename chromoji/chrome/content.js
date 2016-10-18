@@ -79,14 +79,14 @@ function insert() {
                 }
                 var self = this;
 
-                content = emoji.replace_unified(htmlEntities(self.textContent));
+                content = emoji.replace_unified(self.textContent);
                 if (content != this.textContent) {
                     $parent = $this.parent();
                     fontSize = $parent.css('font-size');
                     fontSize = (parseInt(fontSize) * scale) + 'px';
                     var replacementNode = document.createElement('span');
                     replacementNode.className = 'emoji-container';
-                    replacementNode.innerHTML = content;
+                    replacementNode.innerHTML = emoji.replace_unified(htmlEntities(self.textContent));
                     self.parentNode.insertBefore(replacementNode, self);
                     self.parentNode.removeChild(self);
                     if (fontSize != '16px') {
