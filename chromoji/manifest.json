@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Chromoji - Emojis for Google Chrome",
   "description": "Display emojis in Chrome",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "icons": {
     "16": "data/images/icon-16.png",
     "48": "data/images/icon-48.png",
