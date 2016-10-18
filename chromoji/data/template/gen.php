@@ -1679,3 +1679,10 @@
     ?>
 
 </div>
+<div class="emoji-container">
+    <input type="text" class="emoji-container-text" placeholder="Copy and Paste from here">
+</div>
+
+
+</body>
+</html>
