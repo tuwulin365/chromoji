@@ -65,7 +65,7 @@ function insert() {
         }
 
         emoji.img_set = style;
-        $('*:not(iframe):not(.emoji-inner):not(style):not(script):not(title)')
+        $('*:not(iframe):not(.emoji-inner):not(style):not(script):not(title):not(input):not(textarea)')
             .contents()
             .filter(function () {
                 return this.nodeType === 3;
