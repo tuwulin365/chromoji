@@ -7,13 +7,13 @@ emoji.img_sets = {
     'apple': {'path': url + 'emoji-data/img-apple-64/', 'sheet': url + 'emoji-data/sheet_apple_64.png', 'mask': 1},
     'google': {'path': url + 'emoji-data/img-google-64/', 'sheet': url + 'emoji-data/sheet_google_64.png', 'mask': 2},
     'twitter': {
-        'path': url + 'emoji-data/img-twitter-72/',
+        'path': url + 'emoji-data/img-twitter-64/',
         'sheet': url + 'emoji-data/sheet_twitter_64.png',
         'mask': 4
     },
-    'emojione': {
-        'path': url + 'emoji-data/img-emojione-64/',
-        'sheet': url + 'emoji-data/sheet_emojione_64.png',
+    'facebook': {
+        'path': url + 'emoji-data/img-facebook-64/',
+        'sheet': url + 'emoji-data/sheet_facebook_64.png',
         'mask': 8
     }
 };
@@ -54,7 +54,7 @@ function insert() {
     }
     storage.get('type', function (data) {
 
-        style = 'emojione';
+        style = 'facebook';
         if (data.type && data.type.style) {
             style = data.type.style;
         }
