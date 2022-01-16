@@ -54,7 +54,7 @@ function insert() {
     }
     storage.get('type', function (data) {
 
-        style = 'facebook';
+        style = 'apple';
         if (data.type && data.type.style) {
             style = data.type.style;
         }
