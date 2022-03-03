@@ -17,9 +17,21 @@ in the icons packs.
 
 
 
+# 我的说明
+
 作者好久没更新了，我来整一整。主要是更新下图片资源，其他我也不会。:smile_cat:
 
-图片在这里下
+
+
+想直接使用的看这：
+
+直接下载插件安装包chromoji.crx，安装使用。插件的离线安装方法请自行百度。
+
+
+
+想自己更新的看这：
+
+图片资源在这里下
 
 https://github.com/iamcal/emoji-data
 
@@ -40,3 +52,8 @@ https://github.com/iamcal/emoji-data/blob/master/emoji.json
 然后执行批处理，即可生成索引表。把表内容复制替换这个文件里的数据即可。
 
 /data/script/emoji.min.js
+
+
+
+
+
