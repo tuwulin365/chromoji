@@ -53,7 +53,7 @@ https://github.com/iamcal/emoji-data/blob/master/emoji.json
 
 /data/script/emoji.min.js
 
-
+build.bat是打包脚本，里面的路径请根据实际情况进行修改。
 
 
 
