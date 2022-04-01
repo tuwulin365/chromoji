@@ -49,7 +49,7 @@ https://github.com/iamcal/emoji-data/blob/master/emoji.json
 
 放到 /tools/json_tool/bin/release，
 
-然后执行批处理，即可生成索引表。把表内容复制替换这个文件里的数据即可。
+根据图片分辨率修改批处理，然后执行批处理，即可生成索引表。把表内容复制替换这个文件里的数据即可。
 
 /data/script/emoji.min.js
 
