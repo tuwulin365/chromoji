@@ -1,2 +1,2 @@
-cjson_test.exe emoji.json 3960 64
+cjson_test.exe emoji.json 4026 64
 pause
