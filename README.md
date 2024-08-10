@@ -37,7 +37,7 @@ https://github.com/iamcal/emoji-data
 
 我已经放在 /pic 里了。有两种，high是24位图，高清，但是体积大；low是8位索引图，画质差点，但是体积小。默认用的是low，可以根据需要自己替换，路径是 
 
-/data/images/emoji/emoji-data
+/chromoji/data/images/emoji/emoji-data
 
 我还整了个小工具，用来生成索引表。图片和索引表必须版本一致才能正常显示。
 
@@ -47,11 +47,11 @@ https://github.com/iamcal/emoji-data/blob/master/emoji_pretty.json 或者
 
 https://github.com/iamcal/emoji-data/blob/master/emoji.json
 
-放到 /tools/json_tool/bin/release，
+放到 /chromoji/tools/json_tool/bin/release，
 
-根据图片分辨率修改批处理，然后执行批处理，即可生成索引表。把表内容复制替换这个文件里的数据即可。
+根据图片分辨率修改批处理cjson_test.bat，然后执行批处理，即可生成索引表。把表内容复制替换下面这个文件里的数据即可：
 
-/data/script/emoji.min.js
+/chromoji/data/script/emoji.min.js
 
 build.bat是打包脚本，里面的路径请根据实际情况进行修改。
 
